@@ -9,8 +9,8 @@ func main() {
 //    var array: [Int] = [1, 2, 3, 6, 8, 10, 12, 15, 33, 88]
     var swapped = false
     
-    for _ in 0..<array.count {
-        for j in 0..<array.count - 1 {
+    for i in 0..<array.count {
+        for j in 0..<array.count - i - 1 {
             if array[j] > array[j + 1] {
 //                var temp = array[j]
 //                array[j] = array[i]
