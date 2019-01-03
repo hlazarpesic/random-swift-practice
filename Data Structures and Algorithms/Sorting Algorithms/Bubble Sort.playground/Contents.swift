@@ -12,9 +12,9 @@ func main() {
     for i in 0..<array.count {
         for j in 0..<array.count - i - 1 {
             if array[j] > array[j + 1] {
-//                var temp = array[j]
-//                array[j] = array[i]
-//                array[i] = temp
+//                let temp = array[j]
+//                array[j] = array[j+1]
+//                array[j+1] = temp
                 array.swapAt(j, j + 1)
                 swapped = true
             }
