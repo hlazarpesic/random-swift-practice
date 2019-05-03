@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "TaskListController.filterTasks(by:):TaskListController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "filteredTasks">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in TaskListController.prepare(for:sender:):TaskListController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self?.tasks.value">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
