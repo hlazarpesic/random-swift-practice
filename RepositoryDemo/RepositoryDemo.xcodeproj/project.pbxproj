@@ -19,6 +19,9 @@
 		7412BC0722CD3BDF00B94BE9 /* ReleaseConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7412BC0622CD3BDF00B94BE9 /* ReleaseConfiguration.swift */; };
 		7412BC0922CD3C1900B94BE9 /* ConfigurationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7412BC0822CD3C1900B94BE9 /* ConfigurationType.swift */; };
 		7412BC0B22CD3C5000B94BE9 /* Configuraion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7412BC0A22CD3C5000B94BE9 /* Configuraion.swift */; };
+		7412BC1222CD423200B94BE9 /* APIDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7412BC1122CD423200B94BE9 /* APIDataStore.swift */; };
+		7412BC1522CD426B00B94BE9 /* Singleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7412BC1422CD426B00B94BE9 /* Singleton.swift */; };
+		7412BC1C22CD446C00B94BE9 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7412BC1B22CD446C00B94BE9 /* Repository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		7412BC0622CD3BDF00B94BE9 /* ReleaseConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReleaseConfiguration.swift; sourceTree = "<group>"; };
 		7412BC0822CD3C1900B94BE9 /* ConfigurationType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationType.swift; sourceTree = "<group>"; };
 		7412BC0A22CD3C5000B94BE9 /* Configuraion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuraion.swift; sourceTree = "<group>"; };
+		7412BC1122CD423200B94BE9 /* APIDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIDataStore.swift; sourceTree = "<group>"; };
+		7412BC1422CD426B00B94BE9 /* Singleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Singleton.swift; sourceTree = "<group>"; };
+		7412BC1B22CD446C00B94BE9 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		7545ABC9EBAB7BBC5359CAE0 /* Pods_RepositoryDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RepositoryDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC81E78F1C1F29874606F52 /* Pods-RepositoryDemo.development.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepositoryDemo.development.xcconfig"; path = "Target Support Files/Pods-RepositoryDemo/Pods-RepositoryDemo.development.xcconfig"; sourceTree = "<group>"; };
 		8C3C66E9FBBD74AA20A17BA8 /* Pods-RepositoryDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RepositoryDemo.release.xcconfig"; path = "Target Support Files/Pods-RepositoryDemo/Pods-RepositoryDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -84,13 +90,14 @@
 		7412BBEC22CD3AA000B94BE9 /* RepositoryDemo */ = {
 			isa = PBXGroup;
 			children = (
-				7412BBFF22CD3B2E00B94BE9 /* Configuration */,
 				7412BBED22CD3AA000B94BE9 /* AppDelegate.swift */,
-				7412BBEF22CD3AA000B94BE9 /* ViewController.swift */,
-				7412BBF122CD3AA000B94BE9 /* Main.storyboard */,
-				7412BBF422CD3AA100B94BE9 /* Assets.xcassets */,
-				7412BBF622CD3AA100B94BE9 /* LaunchScreen.storyboard */,
 				7412BBF922CD3AA100B94BE9 /* Info.plist */,
+				7412BBFF22CD3B2E00B94BE9 /* Configuration */,
+				7412BC0E22CD420B00B94BE9 /* Persistance */,
+				7412BC1322CD426100B94BE9 /* Models */,
+				7412BC1822CD42CB00B94BE9 /* Views */,
+				7412BC1922CD42D100B94BE9 /* ViewModels */,
+				7412BC1722CD42B200B94BE9 /* Resources */,
 			);
 			path = RepositoryDemo;
 			sourceTree = "<group>";
@@ -106,6 +113,72 @@
 				7412BC0A22CD3C5000B94BE9 /* Configuraion.swift */,
 			);
 			path = Configuration;
+			sourceTree = "<group>";
+		};
+		7412BC0E22CD420B00B94BE9 /* Persistance */ = {
+			isa = PBXGroup;
+			children = (
+				7412BC1A22CD445C00B94BE9 /* Repository */,
+				7412BC0F22CD421500B94BE9 /* DataStore */,
+			);
+			path = Persistance;
+			sourceTree = "<group>";
+		};
+		7412BC0F22CD421500B94BE9 /* DataStore */ = {
+			isa = PBXGroup;
+			children = (
+				7412BC1122CD423200B94BE9 /* APIDataStore.swift */,
+			);
+			path = DataStore;
+			sourceTree = "<group>";
+		};
+		7412BC1322CD426100B94BE9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7412BC1422CD426B00B94BE9 /* Singleton.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7412BC1622CD428000B94BE9 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7412BBF122CD3AA000B94BE9 /* Main.storyboard */,
+				7412BBF622CD3AA100B94BE9 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7412BC1722CD42B200B94BE9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7412BBF422CD3AA100B94BE9 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7412BC1822CD42CB00B94BE9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7412BBEF22CD3AA000B94BE9 /* ViewController.swift */,
+				7412BC1622CD428000B94BE9 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7412BC1922CD42D100B94BE9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7412BC1A22CD445C00B94BE9 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				7412BC1B22CD446C00B94BE9 /* Repository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		CAFDE5025367C0EF42315DDE /* Frameworks */ = {
@@ -234,9 +307,12 @@
 				7412BC0922CD3C1900B94BE9 /* ConfigurationType.swift in Sources */,
 				7412BC0B22CD3C5000B94BE9 /* Configuraion.swift in Sources */,
 				7412BC0322CD3B6700B94BE9 /* DevelopmentConfiguration.swift in Sources */,
+				7412BC1522CD426B00B94BE9 /* Singleton.swift in Sources */,
 				7412BC0122CD3B4300B94BE9 /* ApplicationConfiguration.swift in Sources */,
+				7412BC1C22CD446C00B94BE9 /* Repository.swift in Sources */,
 				7412BC0722CD3BDF00B94BE9 /* ReleaseConfiguration.swift in Sources */,
 				7412BBF022CD3AA000B94BE9 /* ViewController.swift in Sources */,
+				7412BC1222CD423200B94BE9 /* APIDataStore.swift in Sources */,
 				7412BC0522CD3BA900B94BE9 /* StagingConfiguration.swift in Sources */,
 				7412BBEE22CD3AA000B94BE9 /* AppDelegate.swift in Sources */,
 			);
