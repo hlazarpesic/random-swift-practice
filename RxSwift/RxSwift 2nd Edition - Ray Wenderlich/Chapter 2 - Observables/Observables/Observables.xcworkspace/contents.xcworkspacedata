@@ -2,7 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:MyPlayground.playground">
+      location = "group:Subjects.playground">
+   </FileRef>
+   <FileRef
+      location = "group:/Users/hlazarpesic/iOSDevelopment/random-swift-practice/RxSwift/RxSwift 2nd Edition - Ray Wenderlich/Chapter 2 - Observables/Observables/Observables.playground">
    </FileRef>
    <FileRef
       location = "group:Observables.xcodeproj">
