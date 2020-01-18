@@ -1,5 +1,6 @@
-import UIKit
+import Foundation
 
+//Child classes should never break the parent class' type definitions.
 ///Example where is substitution principle is broken
 
 class Rectangle: CustomStringConvertible {

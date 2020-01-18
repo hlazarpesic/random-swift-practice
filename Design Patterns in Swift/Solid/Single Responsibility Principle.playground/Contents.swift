@@ -1,5 +1,6 @@
 import Foundation
-import UIKit
+
+//A class should have one, and only one, reason to change.
 
 class Journal: CustomStringConvertible {
     
