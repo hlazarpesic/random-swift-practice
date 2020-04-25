@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="16096" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="16012"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Tip_Calculator_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" text="$20.0" id="u7C-UL-Ivg">
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <fontDescription key="font" type="system" pointSize="22"/>
+                        </label>
+                        <slider height="37" alignment="left" continuous="YES" value="20" minimum="5" maximum="100" steps="19" id="6jV-fg-gnG">
+                            <connections>
+                                <action selector="changeOfMealValue:" destination="AgC-eL-Hgc" id="knq-55-Wde"/>
+                            </connections>
+                        </slider>
+                        <group width="1" alignment="left" id="zTb-ZG-Kw3">
+                            <items>
+                                <label alignment="left" text="10%" id="gbH-sU-Lqf">
+                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                </label>
+                                <label alignment="center" text="$2.0" id="PQd-xh-9Y1"/>
+                                <label alignment="right" text="$22" id="ADr-5P-tkl"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="g3n-5s-ijm">
+                            <items>
+                                <label alignment="left" text="15%" id="bhg-py-3FG">
+                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                </label>
+                                <label alignment="center" text="$3.0" id="pSI-ga-rT9"/>
+                                <label alignment="right" text="$23" id="17P-rV-ZBq"/>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="aWO-zF-beB">
+                            <items>
+                                <label alignment="left" text="20%" id="OXe-5P-sca"/>
+                                <label alignment="center" text="$4.0" id="mEL-UX-KpA"/>
+                                <label alignment="right" text="$24" id="psf-OS-EOs"/>
+                            </items>
+                        </group>
+                    </items>
+                    <color key="backgroundColor" red="1" green="0.72309009879999997" blue="0.4460881881" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <connections>
+                        <outlet property="fifteenTip" destination="pSI-ga-rT9" id="zJn-S0-Vog"/>
+                        <outlet property="fifteenTipTotal" destination="17P-rV-ZBq" id="Ap4-Ay-sIG"/>
+                        <outlet property="mealValue" destination="u7C-UL-Ivg" id="0a7-TJ-dB2"/>
+                        <outlet property="tenTip" destination="PQd-xh-9Y1" id="jCj-Hh-ZAX"/>
+                        <outlet property="tenTipTotal" destination="ADr-5P-tkl" id="dFu-E9-dIP"/>
+                        <outlet property="twentyTip" destination="mEL-UX-KpA" id="UBe-Mz-4DF"/>
+                        <outlet property="twentyTipTotal" destination="psf-OS-EOs" id="YXL-rT-i2d"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="31"/>
+        </scene>
+    </scenes>
+</document>
